@@ -39,13 +39,12 @@ class Main2{
 	public static Person generatePerson(Person person) {
 		return new Person();
 	}
-	
 	public static void main(String[] args) {
 		Person newStudent = generatePerson(new Students());
 
 		Person newTeacher = generatePerson(new Instructor());
 
-		System.out.println(newStudent);
-		System.out.println(newTeacher);
+		System.out.println(newStudent.toString());
+		System.out.println(newTeacher.toString());
 	}
 }

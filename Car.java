@@ -38,7 +38,7 @@ class OLA{
 	public int calculateBill(Car car)
 	{
 		int a = car.numberOfKms;
-		int totalFare = a*fare;
+		int totalFare = a * fare;
 		return totalFare;
 		
 	}
@@ -59,7 +59,11 @@ class Main{
 		OLA myOla = new OLA();
 		Car myCar = myOla.bookCar(pass, kms);
 		int res = myOla.calculateBill(myCar);
-		System.out.println("The total fare amount is"+ res);
+		System.out.println("The total fare amount is: "+ car.numberOfKms * myOla.fare);
+//		System.out.println("number of kms:"+car.numberOfKms);
+//		System.out.println("myola fare:"+myOla.fare);
+		
+		sc.close();
 	}
 }
 
