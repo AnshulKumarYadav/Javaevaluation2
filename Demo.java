@@ -10,7 +10,7 @@ public class Demo {
 		int students = sc.nextInt();
 		for(int i=0;i<students;i++)
 		{
-			Student[] st = new Student[students];
+//			Student[] st = new Student[students];
 			System.out.println(" Enter Roll number: ");
 			int roll = sc.nextInt();
 			System.out.println("Enter Name: ");
@@ -21,6 +21,7 @@ public class Demo {
 			int marks = sc.nextInt();
 			
 			Student stStudent = new Student(roll,name,add,marks);
+			stStudent.display();
 			
 		}
 		sc.close();

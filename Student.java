@@ -1,8 +1,5 @@
 package com.eval2;
 
-
-import java.util.Scanner;
-
 public class Student {
 	
 	private int roll;
@@ -45,6 +42,13 @@ public class Student {
 		this.name = name;
 		this.address = addr;
 		this.marks = marks;
+	}
+	void display()
+	{
+		System.out.println("The roll is:"+roll);
+		System.out.println("The name is: "+name);
+		System.out.println("The address is: " +address);
+		System.out.println("The marks is: "+marks);
 	}
 	
 }
