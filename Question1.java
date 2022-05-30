@@ -7,19 +7,21 @@ public class Question1 {
  * 
  * 
  * Ans. Is-A relationship:-  It defines a class is inherited by another class with separated classes.
- * Has-A relationship:- When a class is in a class that means Has-A relationship.
+ *         Has-A relationship:- A class having entity reference called Has-A relationship.
  * 
  * 
  * */
-	
+	C c;
 	public static void main(String[] args) {
 		Question1 oneQuestion1 = new B();
 		oneQuestion1.display();
-		
-		
-	
+		C cr = new C();
+		cr.c=4;
 		
 	}
+	void displayC(){  
+		System.out.println("The c is :" +this.c);   
+		}  
 	
 	// Is-A relationship
 	
@@ -28,17 +30,10 @@ public class Question1 {
 		System.out.println("I am in Question1 class");
 	}
 	
-//	Has-A relationship
-	
-	class C{
-		void display()
-		{
-			System.out.println("I am in C class");
-		}
-	}
-	
-	
 
+}
+class C{
+	int c=9;
 }
 
 class B extends Question1{
